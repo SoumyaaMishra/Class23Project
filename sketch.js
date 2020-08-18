@@ -40,7 +40,7 @@ function setup() {
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
 	 World.add(world, ground);
 	 
-	box1 = createSprite(400, 665, 200, 20);
+	box1 = createSprite(400, 655, 200, 20);
 	box2 = createSprite(300, 630, 20, 60);
 	box3 = createSprite(500, 630, 20, 60);
 	 
@@ -55,6 +55,7 @@ function draw() {
   background(0);
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
+  box1.display();
   drawSprites();
  
 }
